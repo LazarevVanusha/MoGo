@@ -8,6 +8,79 @@
     width: 62%;
     left: 19%;
 background:none;
+    color: black;
+
+}
+
+.carousel-imageOne-text{
+    font-size: 3.7vw;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    margin-left: 35%;
+    margin-top: 10%;
+    color: white;
+font-family: kaushan;
+}
+#imageOne-lineOne{
+    font-family: sans-serif;
+    top: 70px;
+    margin-left: 31%;
+    font-size: 7.5vw;
+    font-weight: bold;
+    color: white;
+}
+#imageOne-lineTwo{
+    font-family: sans-serif;
+
+    top: 210px;
+    margin-left: 32%;
+    font-size: 7.5vw;
+    font-weight: bold;
+    color: white;
+}
+.btn{
+    position: absolute;
+    top :75%;
+    left: 46.5%;
+    border-color: white;
+    color: white;
+    border: 3px solid white;
+    border-radius: 0;
+    background:none;
+}
+.btn:hover{
+    border: 2px solid white;
+    background: #edc888;
+}
+@media (max-width: 1100px) {
+    #imageOne-lineTwo{
+        top: 110px;
+    }
+    #imageOne-lineOne{
+        top: 30px;
+    }
+    .btn{
+        display: none;
+    }
+}
+@media (max-width: 700px) {
+    #imageOne-lineTwo{
+        top: 70px;
+    }
+
+}
+#imageLine{
+    position: absolute;
+    border-color: black;
+    display: flex;
+    z-index: 90;
+    margin-top: 40px;
+    display: flex;
+    /*font-size: 150px;*/
+    /*font-weight: bold;*/
+    /*border-color: black;*/
 }
 .navbar-brand{
     font-weight: bold;
@@ -19,6 +92,9 @@ background:none;
 @media (max-width: 990px) {
     #navbarSupportedContent{
         width: 100%;
+    }
+    .iPad{
+
     }
 }
 /*@media (max-width: 1300px ){*/
@@ -33,7 +109,8 @@ background:none;
 .navbar-nav{
     left: 65%;
 }
-
+#carouselExampleIndicators{
+}
 .nav-item{
     font-weight: bold;
     font-size: 14px;
@@ -43,7 +120,7 @@ background:none;
 }
 .carousel {
     position: relative;
-    max-height: 100%;
+    max-height: 960px;
     width: 100%;
     overflow: hidden;
     min-width: 100px;
@@ -52,6 +129,7 @@ background:none;
 
 
 .main {
+
     height: 100vh;
 }
 
@@ -62,6 +140,9 @@ background:none;
 .firstLine {
     font-size: 24px;
     margin: 0;
+    padding-top: 60px;
+    font-family: kaushan;
+
 }
 
 .secondLine {
@@ -161,23 +242,25 @@ margin-top: 50px;
     padding-left: 15px;
     float: left;
     margin: 0;
+
 }
 .textService-2{
     font-size: 15px;
     opacity: 50%;
     margin-left: 45px;
     text-align: left;
+
 }
 .colService .textService{
     float: top;
 }
-@media (max-width: 200px ) {
+/*@media (max-width: 200px ) {*/
 
-.colService{
-    margin-bottom: 100px;
-}
+/*!*.colService{*!*/
+/*!*    margin-bottom: 100px;*!*/
+/*!*}*!*/
 
-}
+/*}*/
 .firstLineService{
 }
 .borderService{
@@ -186,4 +269,63 @@ margin-top: 50px;
     opacity: 50%;
     margin-top:50px ;
 }
+.unique{
+    position: relative;
+    max-width: 100%;
+    max-height: 1920px;
+    margin-top: 100px;
+    background: url("images/service/Layer 45.png") no-repeat;
+}
+.iPad{
 
+display: flex;
+    justify-content: center;
+
+}
+.iPhone{
+    position: absolute;
+    display: flex;
+    margin-left: calc(-25% + 970px);
+    margin-top: 250px;
+}
+#textWhatWeDo{
+    position: absolute;
+    text-align: center;
+    left: 22%;
+    right: 22%;
+    opacity: 50%;
+    font-size: 15px;
+}
+.WhatWeDo{
+    position: relative;
+    width: 95%;
+    margin-top: 175px;
+    margin-right:0 ;
+    left: 5%;
+}
+
+.accordion-text{
+    font-weight: 500;
+    margin: 0;
+    margin-left: 20px;
+
+}
+.accordion-body{
+    opacity: 50%;
+}
+.accordion-button:not(.collapsed) {
+    color: black;
+    background-color: white;
+}
+
+.col{
+    max-width: 600px;
+}
+#imageServicePeople{
+    padding: 0;
+margin-right: 20px;
+}
+@font-face{
+    font-family: kaushan;
+    src: url("fonts/KaushanScript-Regular.ttf");
+}
